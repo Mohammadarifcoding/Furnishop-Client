@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Container = ({children}) => {
+type newData = {
+   children: any
+}
+ 
+const Container:FC<newData> = ({children}) => {
     return (
         <div className='max-w-[1250px] mx-auto '>
             {children}

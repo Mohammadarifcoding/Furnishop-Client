@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../../Shared/Container/Container";
-import Banner from "./Banner/Banner";
+import Container from "../../Shared/Container/Container.tsx";
+import Banner from "./Banner/Banner.tsx";
 
 function Home() {
     return (

@@ -8,8 +8,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Components/Pages/Home/Home';
-import Layout from './Components/Layout/Layout';
+import Home from './Components/Pages/Home/Home.tsx';
+import Layout from './Components/Layout/Layout.tsx';
+import { render } from '@testing-library/react';
+
+
 
 
 
@@ -28,13 +31,19 @@ const router = createBrowserRouter([
 ]);
 
 
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+       <RouterProvider router={router} />
+    </React.StrictMode>)
+  
+} else {
+  // handle the case when the element with id 'root' is not found
+  render(<div>Root elemeent Not found</div>,document.body)
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-     <RouterProvider router={router} />
-  </React.StrictMode>
-);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

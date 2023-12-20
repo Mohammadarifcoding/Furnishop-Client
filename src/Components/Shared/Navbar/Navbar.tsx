@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Container from '../Container/Container';
+import Container from '../Container/Container.tsx';
 
 
 const Navbar = () => {
@@ -15,11 +15,11 @@ const Navbar = () => {
     </>
 
     const  DropLink =  <>
-    <Link>Home</Link>
-    <Link>Home</Link>
-    <Link>Home</Link>
-    <Link>Home</Link>
-    <Link>Home</Link>
+    <Link to={'/'}>Home</Link>
+    <Link to={'/'}>Home</Link>
+    <Link to={'/'}>Home</Link>
+    <Link to={'/'}>Home</Link>
+    <Link to={'/'}>Home</Link>
     </>
 
 
