@@ -4,7 +4,7 @@ import Navbar from '../Shared/Navbar/Navbar.tsx';
 
 const Layout = () => {
     return (
-        <div>
+        <div className='overflow-hidden'>
            <Navbar></Navbar>
             <Outlet></Outlet>
         </div>
