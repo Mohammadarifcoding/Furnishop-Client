@@ -1,4 +1,7 @@
 import React from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import TabsCollection from './TabsCollection/TabsCollection.tsx';
 
 const Collection: React.FC = () => {
     return (
@@ -14,6 +17,9 @@ const Collection: React.FC = () => {
                     />{' '}
                 </span>  </h2>
                 <p className='lg:mt-[20px] md:text-[22px] sm:text-xl text-base lg:text-[22px]  max-w-[700px] text-[Gray] mt-[10px] text-center lg:text-start'>Stay updated with our information and engaging blog posts about modern Furniture and Fashion on the industry</p>
+            </div>
+            <div className='mt-10'>
+                <TabsCollection></TabsCollection>
             </div>
         </div>
     );
