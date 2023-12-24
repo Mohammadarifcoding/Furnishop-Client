@@ -1,10 +1,14 @@
 import React from 'react';
 
-const BannerImage:React.FC = () => {
+type baImage = {
+  img:string
+}
+
+const BannerImage:React.FC<baImage> = ({img}) => {
     return (
-        <div>
-            
-        </div>
+        <div className="pr-[10px] w-[50%]">
+        <img className="w-full" src={img} alt="" />
+    </div>
     );
 };
 
