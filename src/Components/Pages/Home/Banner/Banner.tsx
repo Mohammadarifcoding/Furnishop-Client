@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="flex lg:flex-row flex-col lg:space-y-[0px] space-y-[50px] items-center py-[20px] xl:px-0 lg:px-[20px] px-[20px] justify-between">
+        <div className="flex lg:flex-row flex-col lg:space-y-[0px] space-y-[50px] items-center py-[20px]    xl:px-0 lg:px-[20px] px-[20px] justify-between">
             <div className="flex-1">
                 <div className="flex flex-col max-w-[450px]">
                     <div className="lg:text-start text-center flex lg:justify-start justify-center ">
