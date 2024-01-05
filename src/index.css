@@ -5,6 +5,22 @@
 
 *{
     font-family: 'Inter', sans-serif;
+    scrollbar-width: 15px;
+}
+
+
+.tabData::-webkit-scrollbar {
+  
+  height: 0px;
+}
+
+.tabData::-webkit-scrollbar-track {
+  background: white;
+}
+
+.tabData::-webkit-scrollbar-thumb {
+  background: #3AA39F;
+  border-radius: 100px;
 }
 
 .menuItemData a.active{
