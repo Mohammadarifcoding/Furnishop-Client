@@ -2,6 +2,7 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { tabsData } from '../../../../../Model/Model';
+import Products from '../Products/Products.tsx';
 
 
 // Import Swiper styles
@@ -52,10 +53,22 @@ const TabsCollection = () => {
     </TabList>
  
     <TabPanel>
-      <h2>Any content 1</h2>
+      <Products data={'ALl'}></Products>
     </TabPanel>
     <TabPanel>
-      <h2>Any content 2</h2>
+      <Products data={'ALl'}></Products>
+    </TabPanel>
+    <TabPanel>
+      <Products data={'ALl'}></Products>
+    </TabPanel>
+    <TabPanel>
+      <Products data={'ALl'}></Products>
+    </TabPanel>
+    <TabPanel>
+      <Products data={'ALl'}></Products>
+    </TabPanel>
+    <TabPanel>
+      <Products data={'ALl'}></Products>
     </TabPanel>
   </Tabs>
 
