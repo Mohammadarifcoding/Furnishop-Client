@@ -36,7 +36,9 @@ if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <React.StrictMode>
-       <RouterProvider router={router} />
+      <div className='bg-[#EEF2FB]'>
+      <RouterProvider router={router} />
+      </div>
     </React.StrictMode>)
   
 } else {

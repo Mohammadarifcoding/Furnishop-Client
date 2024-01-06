@@ -8,10 +8,13 @@ interface ProductsProps {
 
 const Products: FC<ProductsProps> = ({ data }) => {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col CollectionProduct'>
 
-            <div className={`mt-10 mb-10 flex md:overflow-none overflow-auto   flex-nowrap gap-7`}>
+            <div className={`mt-10 lg:mb-20 pb-10 CollectionProduct flex md:overflow-none overflow-auto   flex-nowrap gap-7`}>
                 {data?.slice(0, 4).map(item => <ProductItem data={item}></ProductItem>)}
+            </div>
+            <div className={` mb-10 pb-10 CollectionProduct flex md:overflow-none overflow-auto   flex-nowrap gap-7`}>
+                {data?.slice(4, 8).map(item => <ProductItem data={item}></ProductItem>)}
             </div>
         </div>
 

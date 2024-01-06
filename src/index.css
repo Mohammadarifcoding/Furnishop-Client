@@ -9,16 +9,16 @@
 }
 
 
-.tabData::-webkit-scrollbar {
+.tabData::-webkit-scrollbar,.CollectionProduct::-webkit-scrollbar {
    color: #EEF2FB;
   height: 10px;
 }
 
-.tabData::-webkit-scrollbar-track {
+.tabData::-webkit-scrollbar-track,.CollectionProduct::-webkit-scrollbar-track  {
   background: #EEF2FB;
 }
 
-.tabData::-webkit-scrollbar-thumb {
+.tabData::-webkit-scrollbar-thumb,.CollectionProduct::-webkit-scrollbar-thumb {
   background: #EEF2FB;
   border-radius: 100px;
 }
