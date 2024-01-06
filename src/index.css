@@ -10,16 +10,16 @@
 
 
 .tabData::-webkit-scrollbar {
-  
-  height: 0px;
+   color: #EEF2FB;
+  height: 10px;
 }
 
 .tabData::-webkit-scrollbar-track {
-  background: white;
+  background: #EEF2FB;
 }
 
 .tabData::-webkit-scrollbar-thumb {
-  background: #3AA39F;
+  background: #EEF2FB;
   border-radius: 100px;
 }
 

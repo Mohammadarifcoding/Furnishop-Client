@@ -6,7 +6,7 @@ import Collection from "./Collection/Collection.tsx";
 function Home() {
     return (
         <Container>
-            <div>
+            <div className=" ">
            <Banner></Banner>
            <Collection></Collection>
             </div>

@@ -3,6 +3,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { tabsData } from '../../../../../Model/Model';
 import Products from '../Products/Products.tsx';
+import ProductData from '../../../../../Data/Collections.ts';
+
+
+
 
 
 // Import Swiper styles
@@ -26,18 +30,20 @@ const TabsCollection = () => {
           id:2
       },
       {
-        name:'Bedroom',
+        name:'Home Office',
         id:3
       },
       {
-        name:'Home Office',
-        id:4
-      },
-      {
         name:'Dining Table',
-        id:5
+        id:4
       }
       ]
+    
+     const BedRoom = ProductData.filter(item => item.category === "Bedroom")
+     const Living_Room = ProductData.filter(item => item.category === "Living Room")
+     const Home_Office = ProductData.filter(item => item.category === "Home Office")
+     const Dining_Table = ProductData.filter(item => item.category === "Dining Table")
+
 
 
     return (
@@ -53,22 +59,19 @@ const TabsCollection = () => {
     </TabList>
  
     <TabPanel>
-      <Products data={'ALl'}></Products>
+      <Products data={ProductData}></Products>
     </TabPanel>
     <TabPanel>
-      <Products data={'ALl'}></Products>
+      <Products data={BedRoom}></Products>
     </TabPanel>
     <TabPanel>
-      <Products data={'ALl'}></Products>
+      <Products data={Living_Room}></Products>
     </TabPanel>
     <TabPanel>
-      <Products data={'ALl'}></Products>
+      <Products data={Home_Office}></Products>
     </TabPanel>
     <TabPanel>
-      <Products data={'ALl'}></Products>
-    </TabPanel>
-    <TabPanel>
-      <Products data={'ALl'}></Products>
+      <Products data={Dining_Table}></Products>
     </TabPanel>
   </Tabs>
 
