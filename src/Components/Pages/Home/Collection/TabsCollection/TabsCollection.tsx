@@ -47,7 +47,7 @@ const TabsCollection = () => {
 
 
     return (
-        <div className='pb-20'>
+        <div className='pb-12'>
              <Tabs>
     <TabList className='flex overflow-auto flex-nowrap pb-5 tabData md:cursor-default cursor-pointer   text-nowrap  gap-3'>
       {collectionItem.map(item => (

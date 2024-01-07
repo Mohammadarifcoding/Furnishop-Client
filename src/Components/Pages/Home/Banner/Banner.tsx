@@ -3,7 +3,7 @@ import BannerImage from './ReUse/BannerImage.tsx';
 
 const Banner = () => {
     return (
-        <div className="flex lg:flex-row flex-col lg:space-y-[0px] space-y-[50px]   items-center pb-[30px] md:pt-20 sm:pt-14 pt-10   xl:px-0 lg:px-[20px] px-[20px] justify-between">
+        <div className="flex lg:flex-row flex-col lg:space-y-[0px] space-y-[50px]   items-center pb-[30px] md:pt-20 sm:pt-14 pt-10   xl:px-0 lg:px-[20px] px-[10px] justify-between">
             <div className="flex-1">
                 <div className="flex flex-col max-w-[450px] ">
                     <div className="lg:text-start text-center flex lg:justify-start justify-center ">

@@ -4,7 +4,7 @@ import TabsCollection from './TabsCollection/TabsCollection.tsx';
 
 const Collection: React.FC = () => {
     return (
-        <div className='sm:py-20 sm:mt-[160px]  mt-20 xl:px-0 lg:px-[20px] px-[20px]'>
+        <div className='sm:py-20 sm:mt-[160px]  mt-20 xl:px-0 lg:px-[20px] px-[10px]'>
             {/* Colletion title */}
             <div>
                 <h2 className='lg:text-start text-center md:text-[47px] text-[28px] leading-[50px] font-bold'>Stylish Collection of <span className='relative'>
